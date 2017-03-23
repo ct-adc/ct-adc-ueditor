@@ -32,7 +32,7 @@ ct-adc-ueditor/
 
 ## 查看效果
 
-View [demo](http://htmlpreview.github.io/https://github.com/ct-adc/ct-adc-ueditor/blob/dev/view/demo.html).
+View [demo](http://htmlpreview.github.io/?https://github.com/ct-adc/ct-adc-ueditor/blob/master/view/demo.html).
 
 ## API
 
