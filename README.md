@@ -36,13 +36,13 @@ View [demo](http://htmlpreview.github.io/?https://github.com/ct-adc/ct-adc-uedit
 
 ## API
 
-- reset: Reset Ueditor, clear content.
+- `reset`: Reset Ueditor, clear content.
 
-- destroy: 销毁编辑器
+- `destroy`: 销毁编辑器
 
-- setContent: 设置内容(sContent | String)
+- `setContent`: 设置内容(sContent | String)
 
-- getContent: 获取富文本内容
+- `getContent`: 获取富文本内容
 
 > 当内容发生改变的时候，会 `emit` 一个 `change` 事件，并且会传递当前的内容最为参数
 
