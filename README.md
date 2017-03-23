@@ -1,8 +1,8 @@
 # ueditor
 
-> A Vuejs Component based on UEditor
+> 基于百度 Ueditor 的 VueJS 组件
 
-## Quick start
+## 快速开始
 
 ``` bash
 # install dependencies
@@ -18,11 +18,9 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 目录结构
 
-## What's included
-
-The core code directory:
+核心代码目录如下:
 
 ```
 ct-adc-ueditor/
@@ -32,11 +30,11 @@ ct-adc-ueditor/
         └── UEditor.vue
 ```
 
-## View the end result
+## 查看效果
 
-View [demo](./view/demo.html).
+View [demo](http://htmlpreview.github.io/https://github.com/ct-adc/ct-adc-ueditor/blob/dev/view/demo.html).
 
-## Document
+## API
 
 - reset()
 
@@ -44,15 +42,15 @@ Reset Ueditor, clear content.
 
 - destroy()
 
-Destroy Ueditor.
+销毁编辑器
 
 - setContent(sContent)
 
-Set content.
+设置内容
 
 - getContent()
 
-Get current html content.
+获取富文本内容
 
-After content changed, it will emit a `change` event with current content.
+> 当内容发生改变的时候，会 `emit` 一个 `change` 事件，并且会传递当前的内容最为参数
 
