@@ -1,4 +1,4 @@
-# ueditor
+# ct-adc-ueditor
 
 > 基于百度 Ueditor 的 VueJS 组件
 
