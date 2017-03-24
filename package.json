@@ -1,6 +1,6 @@
 {
   "name": "ct-adc-ueditor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vuejs Component based on UEditor",
   "author": "Live",
   "private": false,
