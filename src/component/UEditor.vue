@@ -9,10 +9,14 @@
       this.domId = this.getUID(this.domId);
       let config = {};
 
+      // 获取配置项
       Object.assign(config, this.defaultConfig, this.config);
       config.toolbars = this.toolbars.length > 0 ? this.toolbars : this.defaultToolbars;
 
-      this.init(this.domId, config);
+      // 异步初始化，避免 DOM 的 Id 还未渲染，而导致初始化找不到 DOM 报错
+      this.$nextTick(() => {
+        this.init(this.domId, config);
+      });
     },
     props: {
       content: {

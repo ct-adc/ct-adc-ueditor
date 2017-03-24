@@ -1,11 +1,11 @@
 <template>
   <div id="demo" class="container-fluid">
     <div class="col-md-6 col-md-offset-3 mt20 mb20">
-      <ueditor :content="data.content"
+      <u-editor :content="data.content"
                :config="ue.config"
                :toolbars="ue.toolbars"
                @change="clearViewSource"
-               ref="ueditor"></ueditor>
+               ref="ueditor"></u-editor>
     </div>
 
     <div class="col-md-6 col-md-offset-3 mb20">
@@ -22,6 +22,10 @@
                 @click="clearUEditor">
           <i class="glyphicon glyphicon-trash pr5"></i>清空
         </button>
+        <button type="button" class="btn btn-info"
+                @click="showModal">
+          <i class="glyphicon glyphicon-plu pr5"></i>弹窗测试
+        </button>
       </div>
     </div>
 
@@ -30,15 +34,20 @@
         {{ source }}
       </pre>
     </div>
+
+    <modal-test ref="modal"></modal-test>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import UEditor from '../../../../../src/component/UEditor.vue';
 
+  import ModalTest from './ModalTest.vue';
+
   export default {
     components: {
-      ueditor: UEditor
+      UEditor,
+      ModalTest
     },
     data () {
       return {
@@ -48,6 +57,7 @@
         source: '',
         ue: {
           config: { // 配置项
+            zIndex: 900, // 非模态框，默认值
             maximumWords: 200,
             initialFrameHeight: 150
           },
@@ -66,7 +76,7 @@
         this.source = '';
       },
       setContent () {
-          let _this = this;
+        let _this = this;
 
         $.ajax({
           type: 'GET',
@@ -86,9 +96,9 @@
               miniMsg.animation();
             }
           },
-          error (error) {
+          error (err) {
             let miniMsg = new MiniMsg({
-              content: JSON.stringify(error),
+              content: JSON.stringify(err),
               container: $('body'),
               type: 'error',
               duration: 2
@@ -97,6 +107,9 @@
             miniMsg.animation();
           }
         });
+      },
+      showModal () {
+          this.$refs.modal.init();
       }
     }
   }
