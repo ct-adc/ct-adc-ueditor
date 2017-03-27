@@ -67,6 +67,7 @@
     },
     methods: {
       clearUEditor () {
+        this.data.content = '';
         this.$refs.ueditor.reset();
       },
       getContent () {

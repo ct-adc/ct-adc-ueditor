@@ -1,6 +1,6 @@
 # ct-adc-ueditor
 
-> 基于百度 Ueditor 的 VueJS 组件
+> 基于百度 Ueditor 的 VueJS 2.0 组件
 
 ## 快速开始
 
@@ -18,6 +18,11 @@ npm run build
 npm run build --report
 ```
 
+## 查看效果
+
+View [demo](http://htmlpreview.github.io/?https://github.com/ct-adc/ct-adc-ueditor/blob/master/view/demo.html).
+
+
 ## 目录结构
 
 核心代码目录如下:
@@ -30,9 +35,9 @@ ct-adc-ueditor/
         └── UEditor.vue
 ```
 
-## 查看效果
+## 依赖配置
 
-View [demo](http://htmlpreview.github.io/?https://github.com/ct-adc/ct-adc-ueditor/blob/master/view/demo.html).
+具体请参考[百度UEditor文档](http://fex.baidu.com/ueditor/)
 
 ## API
 
