@@ -57,7 +57,7 @@ View [Log](./ChangeLog.md)
 ## Attention
 
 和 Bootstrap 混合使用，会对原有样式造成影响，该影响主要来源于：
-```
+```css
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
