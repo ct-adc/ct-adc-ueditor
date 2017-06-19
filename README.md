@@ -53,3 +53,16 @@ ct-adc-ueditor/
 ## Change Log
 
 View [Log](./ChangeLog.md)
+
+## Attention
+
+和 Bootstrap 混合使用，会对原有样式造成影响，该影响主要来源于：
+```
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+```
+
+请根据实际业务需求，修正样式
