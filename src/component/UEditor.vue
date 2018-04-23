@@ -107,7 +107,9 @@
     },
     watch: {
         content (val) {
-          this.ue.setContent(val);
+          if(this.ue){
+            this.ue.setContent(val);
+          }
         }
     }
   }
