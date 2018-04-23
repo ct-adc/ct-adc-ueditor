@@ -1,7 +1,7 @@
 {
   "name": "ct-adc-ueditor",
-  "version": "0.0.4",
-  "description": "A VueJS 2.0 Component based on UEditor",
+  "version": "1.1.0",
+  "description": "A Vuejs Component based on UEditor",
   "author": "Live",
   "private": false,
   "scripts": {
@@ -9,7 +9,15 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.2.1"
+    "vue": "^2.2.1",
+    "ct-adc-page": "~0.0.1",
+    "ct-adc-auto-complete": "~0.0.1",
+    "ct-adc-list": "~0.0.1",
+    "ct-utility":"~0.0.2",
+    "ct-adc-uploaders":"~0.0.1",
+    "ct-adc-transfers":"~0.0.1",
+    "ct-adc-mixins":"~0.0.1",
+    "ct-adc-area-selector":"~0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
