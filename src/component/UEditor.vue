@@ -99,16 +99,21 @@
         this.ue.destroy();
       },
       setContent (content) {
-        this.ue.setContent(content);
+        this.ue && this.ue.setContent(content);
       },
       getContent () {
-        return this.ue.getContent();
+        if(this.ue){
+          return this.ue.getContent();
+        }
+        return '';
       }
     },
     watch: {
         content (val) {
           if(this.ue){
-            this.ue.setContent(val);
+            this.ue.ready(function() {
+                this.setContent(val);
+            });
           }
         }
     }

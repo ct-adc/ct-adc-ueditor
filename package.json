@@ -13,11 +13,11 @@
     "ct-adc-page": "~0.0.1",
     "ct-adc-auto-complete": "~0.0.1",
     "ct-adc-list": "~0.0.1",
-    "ct-utility":"~0.0.2",
-    "ct-adc-uploaders":"~0.0.1",
-    "ct-adc-transfers":"~0.0.1",
-    "ct-adc-mixins":"~0.0.1",
-    "ct-adc-area-selector":"~0.0.1"
+    "ct-utility": "~0.0.2",
+    "ct-adc-uploaders": "~0.0.1",
+    "ct-adc-transfers": "~0.0.1",
+    "ct-adc-mixins": "~0.0.1",
+    "ct-adc-area-selector": "~0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
